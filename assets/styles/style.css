@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --background: var(--#F1E1C1);
+}
+
+body {
+  width: 100vw;
+  height: 97vh;
+  background-color: #18181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: white;
+}
+
+main {
+  width: 600px;
+  padding: 3rem;
+  border-radius: 8px;
+  background-color: #2d2d33;
+}
+
+main header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+}
+
+#todo-form,
+#edit-form,
+#toolbar,
+#todo-list {
+  padding: 0 1rem 1rem;
+}
+
+#todo-form p,
+#edit-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-control input {
+  margin-right: 0.3rem;
+}
+
+#edit-form > button#cancel-edit-btn {
+  margin-top: 1rem;
+  font-size: medium;
+}
+
+#toolbar {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+#search {
+  padding-right: 1rem;
+  margin-right: 1rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search form {
+  display: flex;
+}
+
+#search h4,
+#filter h4 {
+  margin-bottom: 0.3rem;
+}
+
+#search form input {
+  width: 100%;
+  margin-right: 0.3rem;
+}
+
+#filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.todo h3 {
+  font-size: 1rem;
+}
+
+.buttons-todo {
+  display: flex;
+  gap: 0.4rem;
+}
+
+button {
+  background-color: #1851df;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border-radius: 2px;
+  padding: 0.3rem 0.6rem;
+  color: white;
+}
+
+button:hover {
+  background-color: #1e5aff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button > span {
+  color: white;
+  transition: 0.4s;
+  pointer-events: none;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+
+select {
+  color: #333;
+}
+
+select > option {
+  color: #333;
+}
+
+.hide {
+  display: none;
+}
